@@ -11,7 +11,8 @@ contract TodoList{
     }
 
     constructor() public {
-        taskCount = 0;
+        todos[0] = Todo("test", true);
+        taskCount = 1;
     }
 
     mapping(uint => Todo) public todos;
